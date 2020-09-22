@@ -67,24 +67,9 @@ h1{
 input,label{
     margin:  5px 0px;
 }
-/*
-button {
-    background-color: #607D;;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-}*/
 
 button {
   border-radius: 4px;
-
   background: none;
   color: #7159c1;
   font-size: 14px;
@@ -92,10 +77,8 @@ button {
   padding: 10px 15px;
   transition: all 0.5s;
   text-transform: uppercase;
-
   position: relative;
   overflow: hidden;
-
   border: 2px solid #7159c1;
 }
 
@@ -132,6 +115,7 @@ button:hover::before {
     display: inline-block;
 
 }
+/*Botão deletar*/
 .button_form{
   border-radius: 4px;
 

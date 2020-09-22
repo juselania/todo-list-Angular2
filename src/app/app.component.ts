@@ -11,7 +11,6 @@ const EmployeeArray: Employee[] = [
   { EmployeeID: 2, Codigo: "SP", Nome: "Michael Silva" },
   { EmployeeID: 3, Codigo: "PE", Nome: "Ronaldo Marquês" },
 ]
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -27,7 +26,7 @@ export class AppComponent {
   }
 
   AddOrEdit(): void {
-    if (this.selectedEmployee.EmployeeID == 0)//insert
+    if (this.selectedEmployee.EmployeeID == 0)//inserir
     {
       this.selectedEmployee.EmployeeID = Math.max.apply(Math,this.employeeCollection.map(function(x){return x.EmployeeID;}))+1;
       this.employeeCollection.push(this.selectedEmployee);
