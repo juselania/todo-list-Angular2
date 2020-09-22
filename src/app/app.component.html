@@ -12,9 +12,9 @@
 </ul>
 
 <div class="employeeForm">
-  <label>{{selectedEmployee.EmployeeID ==0 ? "Cadastre seus funcionários":"Update Employee"}}</label><br/>
+  <label>{{selectedEmployee.EmployeeID ==0 ? "Cadastre seus funcionários":"Atualize seus funcionários"}}</label><br/>
   <input [(ngModel)] = "selectedEmployee.Codigo" class="textBox" placeholder="Codigo"/><br/>
   <input [(ngModel)] = "selectedEmployee.Nome" class="textBox" placeholder="Nome"/><br/>
   <button (click)="AddOrEdit()">Enviar</button>
-  <button *ngIf = "selectedEmployee.EmployeeID != 0" (click)="Delete()">Deletar</button>
+  <button  *ngIf = "selectedEmployee.EmployeeID != 0" (click)="Delete()" class="button_form">Deletar</button>
 </div>
