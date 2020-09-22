@@ -1,25 +1,37 @@
-# CRUD - ANGULAR 2
 
-### Sobre a aplicação:
+# Crud de cadastro de funcionários
+  
+Sobre o projeto : 
+- Cadastrar;
+- Deletar e atulizar cadastro;
 
-Um crud de cadastro de usuários, com funcionalidas de ( Submit e deletar);
+
+### Como funciona?
 
 <h1 align="center">
     <img src="./crud.gif" alt="" width="40%" height="40%">
 </h1>
 
 
-### 📝 Licença
+## Para obter projeto
 
-Este projeto foi gerado com [ Angular CLI ] (https://github.com/angular/angular-cli) versão 1.2.7.
-
+```
+$ git clone https://github.com/jucelania/crud-Angular2.git
+$ cd crud-Angular2
+$ npm install
+//run the app
+$ ng serve
+```
 ## Para executar 
 
 Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http: // localhost: 4200 /`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
+### 📝 Licença
 
-## Executando testes 
+Este projeto foi gerado com [ Angular CLI ] (https://github.com/angular/angular-cli) versão 1.2.7.
 
-Execute `ng e2e` para executar os testes de ponta a ponta via [Protractor] (http://www.protractortest.org/).
-Antes de executar os testes, certifique-se de servir o aplicativo via `ng serve`.
+
+
+
+
 
