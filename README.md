@@ -3,7 +3,7 @@
   
 Sobre o projeto : 
 - Cadastrar;
-- Deletar e atualizar os já cadastrados;
+- Deletar e atualizar os comapos já cadastrados;
 
 
 ### Como funciona?
