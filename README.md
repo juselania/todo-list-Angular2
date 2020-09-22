@@ -1,5 +1,5 @@
 
-# Crud de cadastro de funcionários
+# Crud cadastro de funcionários
   
 Sobre o projeto : 
 - Cadastrar;
