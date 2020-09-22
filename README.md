@@ -3,7 +3,7 @@
   
 Sobre o projeto : 
 - Cadastrar;
-- Deletar e atulizar cadastro;
+- Deletar e atualizar os já cadastrados;
 
 
 ### Como funciona?
