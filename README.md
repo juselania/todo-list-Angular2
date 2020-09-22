@@ -5,7 +5,7 @@
 Um crud de cadastro de usuários, com funcionalidas de ( Submit e deletar);
 
 <h1 align="center">
-    <img src="./crud.gif" alt="" width="50%" height="50%">
+    <img src="./crud.gif" alt="" width="40%" height="40%">
 </h1>
 
 
