@@ -19,11 +19,10 @@
 ## Para obter projeto
 
 ```
-$ git clone https://github.com/jucelania/todo-list-angular.git
+$ git clone https://github.com/jucelania/todo-list-Angular2.git
 $ cd todo-list
 $ npm install 
 //run the app
-$ ng serve 
 ```
 ## Para executar 
 
@@ -37,7 +36,7 @@ Execute `ng serve --open` para um servidor de desenvolvimento. Navegue até `htt
 
 ### 📝 Licença
 
-Este projeto foi gerado com [ Angular CLI ] (https://github.com/angular/angular-cli) versão 1.2.7.
+Este projeto foi gerado com [ Angular CLI ] (https://github.com/angular/angular-cli) 
 
 
 

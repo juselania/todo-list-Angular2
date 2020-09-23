@@ -159,6 +159,7 @@ button:hover::before {
     padding: 10px;
     display: inline-block;
 }
+/*Resposividade */
 @media(min-width: 700px){
   :root{
     font-size: 62.5%; /*todo 1rem vai ser relatico a 10px; */

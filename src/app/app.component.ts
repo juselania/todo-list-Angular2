@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+//Array de cadastro
 export class AppComponent {
   title = 'To-do list';
   todos = [{
@@ -41,8 +42,9 @@ addTodo(newTodoLabel){
     done:false
   };
 
+  //Function para cadastrar
   this.todos.push(newTodo);
-  alert("Parabéns cadastro realizado com sucesso!")
+  alert("Parabéns cadastro realizado com sucesso!")// Disparo de mensagem ao cadastrar
 }
 
 deleteTodo(todo){
