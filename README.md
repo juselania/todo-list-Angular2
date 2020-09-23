@@ -9,7 +9,7 @@ Sobre o projeto :
 ### Como funciona?
 
 <h1 align="center">
-    <img src="./crud.gif" alt="" width="40%" height="40%">
+    <img src="./crud.gif" alt="" width="50%" height="50%">
 </h1>
 
 
