@@ -1,21 +1,28 @@
+<h1>
+  {{title}}
+</h1>
 
-<div >
-  <h1 class="line">
-    Cadastro de Funcionários
-  </h1>
-</div>
+<input type="text" #newTodo/>
+<button (click)="addTodo(newTodo.value);  newTodo.value=''">Add</button>
 
-<ul class="employeeList">
-  <li *ngFor = "let employee of employeeCollection" (click)="OpenForEdit(employee)" [class.selected]="employee == selectedEmployee">
-    <span class="badge">{{employee.EmployeeID}}</span> {{employee.Codigo}} - {{employee.Nome}}
-  </li>
-</ul>
+<table>
+<tr>
+  <th>Label</th>
+  <th>Priority</th>
+  <th>Done</th>
 
-<div class="employeeForm">
-  <label>{{selectedEmployee.EmployeeID ==0 ? "Cadastre seus funcionários":"Atualize seus funcionários"}}</label><br/>
-  <input [(ngModel)] = "selectedEmployee.Codigo" class="textBox" placeholder="Codigo"/><br/>
-  <input [(ngModel)] = "selectedEmployee.Nome" class="textBox" placeholder="Nome"/><br/>
-  <button (click)="AddOrEdit()">Enviar</button>
-  <button  *ngIf = "selectedEmployee.EmployeeID != 0" (click)="Delete()" class="button_form">Deletar</button>
-</div>
+</tr>
+
+
+  <tr *ngFor = "let todo of todos">
+    <td>{{todo.label}}</td>
+    <td>{{todo.priority}}</td>
+    <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+    <button (click)="editeTodo(todo)">Edite</button>
+    <button (click)="deleteTodo(todo)">Delete</button>
+  </tr>
+  <td>
+
+  </td>
+</table>
 

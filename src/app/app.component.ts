@@ -1,43 +1,55 @@
 import { Component } from '@angular/core';
 
-export class Employee {
-  EmployeeID: number;
-  Codigo: string;
-  Nome: string;
-}
-
-const EmployeeArray: Employee[] = [
-  { EmployeeID: 1, Codigo: "RJ", Nome: "Ruan Gonzales" },
-  { EmployeeID: 2, Codigo: "SP", Nome: "Michael Silva" },
-  { EmployeeID: 3, Codigo: "PE", Nome: "Ronaldo Marquês" },
-]
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  employeeCollection = EmployeeArray;
+  title = 'To-do list';
+  todos = [{
+      label:'Ivi Gonzales',
+      done:false,
+      priority:3
+},
+{
+      label:'Justin Felix',
+      done:false,
+      priority:2
+},
+{
+  label:'Hello Regina',
+  done:true,
+  priority:4
+},
+{
+  label:'Luiz Pedro',
+  done:false,
+  priority:5
+},
+{
+  label:'Enzo Roberto',
+  done:true,
+  priority:1
+},
+];
 
-  selectedEmployee: Employee = { EmployeeID: 0, Codigo: "", Nome: "" };
+addTodo(newTodoLabel){
+  var newTodo = {
+    label: newTodoLabel,
+    priority:1,
+    done:false
+  };
 
-  OpenForEdit(employee: Employee): void {
-    this.selectedEmployee = employee;
-  }
-
-  AddOrEdit(): void {
-
-    if (this.selectedEmployee.EmployeeID == 0)//inserir
-    {
-      this.selectedEmployee.EmployeeID = Math.max.apply(Math,this.employeeCollection.map(function(x){return x.EmployeeID;}))+1;
-      this.employeeCollection.push(this.selectedEmployee);
-    }
-    this.selectedEmployee =  { EmployeeID: 0, Codigo: "", Nome: "" };
-  }
-
-  Delete() : void{
-    alert("Cadastro deletado com sucesso!");
-    this.employeeCollection = this.employeeCollection.filter(x => x != this.selectedEmployee);
-    this.selectedEmployee =  { EmployeeID: 0, Codigo: "", Nome: "" };
-  }
+  this.todos.push(newTodo);
 }
+
+deleteTodo(todo){
+  this.todos=this.todos.filter(t => t.label !== todo.label);
+}
+
+editeTodo(todo){
+  this.todos=this.todos.filter(t => t.label !== todo.label);
+}
+}
+

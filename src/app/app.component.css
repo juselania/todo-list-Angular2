@@ -1,4 +1,4 @@
-h1{
+/*h1{
   color: #607D;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -115,7 +115,7 @@ button:hover::before {
     display: inline-block;
 
 }
-/*Botão deletar*/
+/*Botão deletar
 .button_form{
   border-radius: 4px;
 
@@ -177,3 +177,4 @@ button:hover::before {
 }
 
 
+*/
