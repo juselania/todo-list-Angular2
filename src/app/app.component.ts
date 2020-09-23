@@ -26,6 +26,7 @@ export class AppComponent {
   }
 
   AddOrEdit(): void {
+
     if (this.selectedEmployee.EmployeeID == 0)//inserir
     {
       this.selectedEmployee.EmployeeID = Math.max.apply(Math,this.employeeCollection.map(function(x){return x.EmployeeID;}))+1;
@@ -35,6 +36,7 @@ export class AppComponent {
   }
 
   Delete() : void{
+    alert("Cadastro deletado com sucesso!");
     this.employeeCollection = this.employeeCollection.filter(x => x != this.selectedEmployee);
     this.selectedEmployee =  { EmployeeID: 0, Codigo: "", Nome: "" };
   }
