@@ -1,28 +1,25 @@
+<div>
 <h1>
   {{title}}
 </h1>
 
-<input type="text" #newTodo/>
-<button (click)="addTodo(newTodo.value);  newTodo.value=''">Add</button>
+<input type="text" placeholder="Insira seu cadastro" #newTodo/>
+<button (click)="addTodo(newTodo.value);  newTodo.value=''"  class="btn btn1">Salvar</button>
 
-<table>
+<table style="align-items:center;" >
 <tr>
-  <th>Label</th>
-  <th>Priority</th>
-  <th>Done</th>
-
+  <th>Nome</th>
+  <th>Prioridade</th>
+  <th>Feito</th>
 </tr>
 
-
-  <tr *ngFor = "let todo of todos">
+  <tr *ngFor = "let todo of todos" style="align-items:center;">
     <td>{{todo.label}}</td>
     <td>{{todo.priority}}</td>
     <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
-    <button (click)="editeTodo(todo)">Edite</button>
-    <button (click)="deleteTodo(todo)">Delete</button>
+    <button (click)="updateTodo(todo)" class="button_ed">Alterar</button>
+    <button (click)="deleteTodo(todo)" class="button_form">Excluir</button>
   </tr>
-  <td>
-
-  </td>
 </table>
+</div>
 

@@ -8,17 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'To-do list';
   todos = [{
-      label:'Ivi Gonzales',
-      done:false,
-      priority:3
+  label:'Ivi Gonzales',
+  done:false,
+  priority:3
 },
 {
-      label:'Justin Felix',
-      done:false,
-      priority:2
+  label:'Justin Felix',
+  done:false,
+  priority:2
 },
 {
-  label:'Hello Regina',
+  label:'Helo Regina',
   done:true,
   priority:4
 },
@@ -42,14 +42,17 @@ addTodo(newTodoLabel){
   };
 
   this.todos.push(newTodo);
+  alert("Parabéns cadastro realizado com sucesso!")
 }
 
 deleteTodo(todo){
+  alert("Campo deletado com sucesso!")
   this.todos=this.todos.filter(t => t.label !== todo.label);
 }
 
-editeTodo(todo){
-  this.todos=this.todos.filter(t => t.label !== todo.label);
+updateTodo(todo){
+  alert("Ops: Algo deu errado!")
+  this.todos=this.todos.filter(t => t.label !== todo.updateTodo);
 }
 }
 
